@@ -300,7 +300,7 @@ if __name__ == "__main__":
 
     data = pyg.data.Data(x=x, edge_index=edge_index.t().contiguous())
 
-    layer = TopologyLayer(1,1, dim1=False)
+    layer = TopologyLayer(1,1)
 
     out = layer(data.x, data.edge_index)
 
